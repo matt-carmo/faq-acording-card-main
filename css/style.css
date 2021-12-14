@@ -106,23 +106,34 @@ img {
     text-align: center;
   }
   .questions {
-    padding-left: 15px;
-    padding-top: 40px;
+    margin-left:15px;
+
+  }
+  .question p {
+    text-align: initial;
   }
   .illustration {
     background: none;
+    display: none;
   }
   .questions h1 {
     padding-bottom: 30px;
+   
   }
 
   .illustration-mobile {
     display: flex;
-    position: absolute;
-    top: 70px;
+    position: relative;
+    top: -70px;
+    margin: 0 auto;
     width: 250px;
+    margin-top: -40px;
   }
-
+  .container {
+    padding:0px;
+    
+  }
+  
   .illustration-1 {
     display: none;
   }

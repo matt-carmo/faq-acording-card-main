@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+body {
+  background: linear-gradient(#af67e9, #6565e7);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.main {
+  display: flex;
+  background: #fff;
+  width: 930px;
+  border-radius: 20px;
+}
+.container {
+  padding: 40px 0px;
+}
+.illustration {
+  background: url("/images/illustration-woman-online-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: -40px;
+}
+.main h4 {
+  color: #787887;
+  padding-bottom: 10px;
+}
+.illustration img {
+  position: absolute;
+  overflow: visible;
+}
+.illustration-1 {
+  position: relative;
+  margin-left: -100px;
+  margin-top: 90px;
+}
+.questions {
+  margin: 0px 10px 0px 0px;
+}
+.answer {
+  color: #787887;
+  visibility: hidden;
+}
+.question h4,
+.drop-icon {
+  display: inline;
+  cursor: pointer;
+}
+.question h4:hover {
+  color: #f47c57;
+}
+.drop-icon {
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.drop-icon img {
+  height: 100%;
+  width: 20px;
+}
+.active img {
+  transform: rotate(180deg);
+  transition: 1000ms;
+}
+.active p {
+  visibility: visible;
+  padding-bottom: 10px;
+  width: 300px;
+}
+.active h4 {
+  color: black;
+}
+.container {
+  flex: 1;
+}
+.footer {
+  font-size: 11px;
+  position: absolute;
+  bottom: 1px;
+  color: #fff;
+}
+.footer a {
+  color: #000;
+}
+.illustration-mobile {
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 90vw;
+    text-align: center;
+  }
+  .questions {
+    padding-left: 15px;
+    padding-top: 40px;
+  }
+  .illustration {
+    background: none;
+  }
+  .questions h1 {
+    padding-bottom: 30px;
+  }
+
+  .illustration-mobile {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    width: 250px;
+  }
+
+  .illustration-1 {
+    display: none;
+  }
+}
